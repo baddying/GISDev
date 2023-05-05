@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1927
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1地图操作", "..\..\..\temp\ArcGIS Engine 地理信息系统开发教程---基于C#.NET\chp03\地图操作\code\MapOperation\1地图操作.csproj", "{1FAE6ECE-65E3-4BA1-8040-EB1A34E521C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2查询统计", "..\AO102\chp04\空间查询统计\code\查询统计\2查询统计.csproj", "{1D8F166E-3854-4879-B281-286B7867A773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FAE6ECE-65E3-4BA1-8040-EB1A34E521C6}.Debug|x86.ActiveCfg = Debug|x86
+		{1FAE6ECE-65E3-4BA1-8040-EB1A34E521C6}.Debug|x86.Build.0 = Debug|x86
+		{1FAE6ECE-65E3-4BA1-8040-EB1A34E521C6}.Release|x86.ActiveCfg = Release|x86
+		{1FAE6ECE-65E3-4BA1-8040-EB1A34E521C6}.Release|x86.Build.0 = Release|x86
+		{1D8F166E-3854-4879-B281-286B7867A773}.Debug|x86.ActiveCfg = Debug|x86
+		{1D8F166E-3854-4879-B281-286B7867A773}.Debug|x86.Build.0 = Debug|x86
+		{1D8F166E-3854-4879-B281-286B7867A773}.Release|x86.ActiveCfg = Release|x86
+		{1D8F166E-3854-4879-B281-286B7867A773}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F410F1C-1615-492C-BF93-CB0CB695FA85}
+	EndGlobalSection
+EndGlobal
