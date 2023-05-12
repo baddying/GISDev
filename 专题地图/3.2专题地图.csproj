@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00505C3A-DEF2-4A5E-AB3D-CF336D5952B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>专题地图</RootNamespace>
+    <AssemblyName>专题地图</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartoUI, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CatalogUI, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\EnumQueryType.cs" />
+    <Compile Include="Class\OperateMap.cs" />
+    <Compile Include="MainUI\frmMainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI\frmMainUI.Designer.cs">
+      <DependentUpon>frmMainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmBivariateRenderer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmBivariateRenderer.Designer.cs">
+      <DependentUpon>frmBivariateRenderer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmChartRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmChartRender.Designer.cs">
+      <DependentUpon>frmChartRender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmClassBreakRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmClassBreakRender.Designer.cs">
+      <DependentUpon>frmClassBreakRender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmDotDensity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmDotDensity.Designer.cs">
+      <DependentUpon>frmDotDensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmGraduatedcolors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmGraduatedcolors.Designer.cs">
+      <DependentUpon>frmGraduatedcolors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmGraduatedSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmGraduatedSymbols.Designer.cs">
+      <DependentUpon>frmGraduatedSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmProportional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmProportional.Designer.cs">
+      <DependentUpon>frmProportional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmScaleDependentRenderer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmScaleDependentRenderer.Designer.cs">
+      <DependentUpon>frmScaleDependentRenderer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmSimpleRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmSimpleRender.Designer.cs">
+      <DependentUpon>frmSimpleRender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmUniqueValueMany_fields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmUniqueValueMany_fields.Designer.cs">
+      <DependentUpon>frmUniqueValueMany_fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\frmUniqueValueRender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symbol\frmUniqueValueRender.Designer.cs">
+      <DependentUpon>frmUniqueValueRender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainUI\frmMainUI.resx">
+      <DependentUpon>frmMainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmBivariateRenderer.resx">
+      <DependentUpon>frmBivariateRenderer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmChartRender.resx">
+      <DependentUpon>frmChartRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmClassBreakRender.resx">
+      <DependentUpon>frmClassBreakRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmDotDensity.resx">
+      <DependentUpon>frmDotDensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmGraduatedcolors.resx">
+      <DependentUpon>frmGraduatedcolors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmGraduatedSymbols.resx">
+      <DependentUpon>frmGraduatedSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmProportional.resx">
+      <DependentUpon>frmProportional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmScaleDependentRenderer.resx">
+      <DependentUpon>frmScaleDependentRenderer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmSimpleRender.resx">
+      <DependentUpon>frmSimpleRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmUniqueValueMany_fields.resx">
+      <DependentUpon>frmUniqueValueMany_fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symbol\frmUniqueValueRender.resx">
+      <DependentUpon>frmUniqueValueRender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
