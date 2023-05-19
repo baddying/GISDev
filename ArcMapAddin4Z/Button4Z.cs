@@ -18,7 +18,7 @@ namespace ArcMapAddin4Z
             //
             //  TODO: Sample code showing how to access button host
             //
-            //ArcMap.Application.CurrentTool = null;
+            ArcMap.Application.CurrentTool = null;
             List<ILayer> lyrLst = new List<ILayer>();
             IMap pMap = ArcMap.Document.FocusMap;
 
