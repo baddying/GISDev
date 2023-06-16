@@ -79,7 +79,7 @@ namespace 最短路径分析
             mainMapControl.CurrentTool = null;
             try
             {
-                string name = NetWorkAnalysClass.getPath(path) + "\\data\\HuanbaoGeodatabase.gdb";
+                string name = @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\HuanbaoGeodatabase.gdb";
                 //打开工作空间
                 pFWorkspace = NetWorkAnalysClass.OpenWorkspace(name) as IFeatureWorkspace;
                 IGraphicsContainer pGrap = this.mainMapControl.ActiveView as IGraphicsContainer;
@@ -114,9 +114,6 @@ namespace 最短路径分析
             this.mainMapControl.Refresh();
         }
 
-        private void frmShortPathSolver_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

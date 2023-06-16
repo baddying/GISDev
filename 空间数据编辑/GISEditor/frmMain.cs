@@ -50,18 +50,13 @@ namespace GISEditor
                 MapManager.EngineEditor = pEngineEditor;
                 pEngineEditTask = pEngineEditor as IEngineEditTask;
                 pEngineEditLayers = pEngineEditor as IEngineEditLayers;
-                sMxdPath = getPath(sMxdPath) + "\\data\\edit.mxd"; ; 
-                if (mainMapControl.CheckMxFile(sMxdPath))
-                {
-                    mainMapControl.LoadMxFile(sMxdPath);
-                }
                 pMap = mainMapControl.Map;
                 pActiveView = pMap as IActiveView;
                 plstLayers = MapManager.GetLayers(pMap);
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show( ex.Message, "InitObject fial");
             }
         }
 
@@ -423,5 +418,14 @@ namespace GISEditor
         }
         #endregion
 
+        /// <summary>
+        /// 实时获取图层列表
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void mainMapControl_OnViewRefreshed(object sender, IMapControlEvents2_OnViewRefreshedEvent e)
+        {
+            plstLayers = MapManager.GetLayers(pMap);
+        }
     }
 }

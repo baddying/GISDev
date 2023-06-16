@@ -14,9 +14,9 @@ namespace GISEditor
         [STAThread]
         static void Main()
         {
-            ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);           
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            //ESRI License Initializer generated code.
+            ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
+            ESRI.ArcGIS.RuntimeManager.BindLicense(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
 
             frmMain frmMain = null;
             frmMain = new frmMain();

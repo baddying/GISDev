@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.toolStripContainer1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1333, 45);
             this.panel1.TabIndex = 0;
@@ -87,12 +87,12 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.ToolGISEdit);
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1333, 45);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
             this.toolStripContainer1.Size = new System.Drawing.Size(1333, 45);
@@ -145,7 +145,7 @@
             // 
             this.btnStartEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnStartEdit.Image")));
             this.btnStartEdit.Name = "btnStartEdit";
-            this.btnStartEdit.Size = new System.Drawing.Size(144, 26);
+            this.btnStartEdit.Size = new System.Drawing.Size(216, 26);
             this.btnStartEdit.Text = "开始编辑";
             this.btnStartEdit.Click += new System.EventHandler(this.btnStartEdit_Click);
             // 
@@ -153,7 +153,7 @@
             // 
             this.btnSaveEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveEdit.Image")));
             this.btnSaveEdit.Name = "btnSaveEdit";
-            this.btnSaveEdit.Size = new System.Drawing.Size(144, 26);
+            this.btnSaveEdit.Size = new System.Drawing.Size(216, 26);
             this.btnSaveEdit.Text = "保存编辑";
             this.btnSaveEdit.Click += new System.EventHandler(this.btnSaveEdit_Click);
             // 
@@ -161,7 +161,7 @@
             // 
             this.btnEndEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEndEdit.Image")));
             this.btnEndEdit.Name = "btnEndEdit";
-            this.btnEndEdit.Size = new System.Drawing.Size(144, 26);
+            this.btnEndEdit.Size = new System.Drawing.Size(216, 26);
             this.btnEndEdit.Text = "结束编辑";
             this.btnEndEdit.Click += new System.EventHandler(this.btnEndEdit_Click);
             // 
@@ -296,7 +296,7 @@
             this.panel2.Controls.Add(this.axToolbarControl1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 45);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1333, 524);
             this.panel2.TabIndex = 1;
@@ -316,7 +316,7 @@
             // 
             this.axLicenseControl1.Enabled = true;
             this.axLicenseControl1.Location = new System.Drawing.Point(368, 114);
-            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axLicenseControl1.Name = "axLicenseControl1";
             this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
@@ -328,17 +328,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainMapControl.Location = new System.Drawing.Point(211, 29);
-            this.mainMapControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mainMapControl.Margin = new System.Windows.Forms.Padding(4);
             this.mainMapControl.Name = "mainMapControl";
             this.mainMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mainMapControl.OcxState")));
             this.mainMapControl.Size = new System.Drawing.Size(1118, 482);
             this.mainMapControl.TabIndex = 1;
+            this.mainMapControl.OnViewRefreshed += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnViewRefreshedEventHandler(this.mainMapControl_OnViewRefreshed);
             // 
             // axToolbarControl1
             // 
             this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.axToolbarControl1.Location = new System.Drawing.Point(0, 0);
-            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axToolbarControl1.Name = "axToolbarControl1";
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
             this.axToolbarControl1.Size = new System.Drawing.Size(1333, 28);
@@ -443,7 +444,7 @@
             this.ClientSize = new System.Drawing.Size(1333, 569);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "数据编辑";

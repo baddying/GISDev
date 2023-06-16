@@ -135,7 +135,7 @@ namespace 最短路径分析
         public override void OnClick()
         {
             // TODO: Add AddNetBarriesTool.OnClick implementation
-            string name = NetWorkAnalysClass.getPath(path) + "\\data\\HuanbaoGeodatabase.gdb";
+            string name = @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\HuanbaoGeodatabase.gdb";
             pFWorkspace = NetWorkAnalysClass.OpenWorkspace(name) as IFeatureWorkspace;
             barriesFClass = pFWorkspace.OpenFeatureClass("Barries");
             if (barriesFClass.FeatureCount(null) > 0)
@@ -178,7 +178,7 @@ namespace 最短路径分析
                 IPictureMarkerSymbol pms = new PictureMarkerSymbolClass();
                 pms.BitmapTransparencyColor = pColor;
                 //添加自定义障碍点图片
-                pms.CreateMarkerSymbolFromFile(esriIPictureType.esriIPictureBitmap, NetWorkAnalysClass.getPath(path) + "\\data\\Img\\barries.bmp");
+                pms.CreateMarkerSymbolFromFile(esriIPictureType.esriIPictureBitmap, @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\Img\\barries.bmp");
                 pms.Size = 18;
                 IMarkerElement pMarkerEle = new MarkerElementClass();
                 pMarkerEle.Symbol = pms as IMarkerSymbol;

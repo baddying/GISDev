@@ -138,7 +138,7 @@ namespace 最短路径分析
         public override void OnClick()
         {
             // TODO: Add ShortPathSolveCommand.OnClick implementation
-            string name = NetWorkAnalysClass.getPath(path) + "\\data\\HuanbaoGeodatabase.gdb";
+            string name = @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\HuanbaoGeodatabase.gdb";
             IFeatureWorkspace pFWorkspace = NetWorkAnalysClass.OpenWorkspace(name) as IFeatureWorkspace;
             //"RouteNetwork", "BaseData"参数不可更改
             networkDataset = NetWorkAnalysClass.OpenPathNetworkDataset(pFWorkspace as IWorkspace, "RouteNetwork", "BaseData");

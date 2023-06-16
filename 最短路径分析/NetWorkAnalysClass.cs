@@ -10,19 +10,7 @@ namespace 最短路径分析
 {
     class NetWorkAnalysClass
     {
-        public static string getPath(string path) 
-        {
-            int t;
-            for (t = 0; t < path.Length; t++)
-            {
-                if (path.Substring(t, 4) == "code")
-                {
-                    break;
-                }
-            }
-            string name = path.Substring(0, t - 1);
-            return name;         
-        }
+
         //打开工作区间
         public static IWorkspace OpenWorkspace(string strGDBName)
         {

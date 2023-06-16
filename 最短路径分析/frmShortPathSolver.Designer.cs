@@ -186,7 +186,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmShortPathSolver";
             this.Text = "最短路径分析";
-            this.Load += new System.EventHandler(this.frmShortPathSolver_Load);
+  
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();

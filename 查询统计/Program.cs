@@ -13,9 +13,9 @@ namespace QueryAndStatistics
         [STAThread]
         static void Main()
         {
+            //ESRI License Initializer generated code.
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
-            IAoInitialize aoInit = new AoInitializeClass();
-            aoInit.Initialize(esriLicenseProductCode.esriLicenseProductCodeArcServer);
+            ESRI.ArcGIS.RuntimeManager.BindLicense(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
 
 
             Application.EnableVisualStyles();

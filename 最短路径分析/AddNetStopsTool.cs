@@ -135,7 +135,7 @@ namespace 最短路径分析
         public override void OnClick()
         {
             // TODO: Add AddNetStopsTool.OnClick implementation
-            string name = NetWorkAnalysClass.getPath(path) + "\\data\\HuanbaoGeodatabase.gdb";
+            string name = @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\HuanbaoGeodatabase.gdb";
             pFWorkspace = NetWorkAnalysClass.OpenWorkspace(name) as IFeatureWorkspace;
             inputFClass = pFWorkspace.OpenFeatureClass("Stops");
             if (inputFClass.FeatureCount(null) > 0)
@@ -179,7 +179,7 @@ namespace 最短路径分析
                 pColor = pRgbColor as IColor;
                 IPictureMarkerSymbol pms = new PictureMarkerSymbolClass();
                 pms.BitmapTransparencyColor = pColor;
-                string picturePath = NetWorkAnalysClass.getPath(path) + "\\data\\Img\\stops.bmp";
+                string picturePath = @"D:\code\AO107\AO102\chp10\最短路径分析" + "\\data\\Img\\stops.bmp";
                 //添加自定义站点图片
                 pms.CreateMarkerSymbolFromFile(esriIPictureType.esriIPictureBitmap, picturePath);
                 pms.Size = 18;
